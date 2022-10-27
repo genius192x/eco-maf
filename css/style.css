@@ -511,44 +511,6 @@ body::after {
   list-style-position: inside;
 }
 
-@supports (padding-bottom: clamp( 2.5rem , 1.4772727273rem  +  5.1136363636vw , 5.3125rem )) {
-  .projects {
-    padding-bottom: clamp( 2.5rem , 1.4772727273rem  +  5.1136363636vw , 5.3125rem );
-  }
-}
-
-@supports not (padding-bottom: clamp( 2.5rem , 1.4772727273rem  +  5.1136363636vw , 5.3125rem )) {
-  .projects {
-    padding-bottom: calc(2.5rem + 2.8125 * (100vw - 20rem) / 55);
-  }
-}
-
-.projects__label {
-  text-align: center;
-  color: grey;
-  line-height: 150%;
-}
-
-@supports (font-size: clamp( 1rem , 1.2507836991rem  +  -1.2539184953vw , 1.25rem )) {
-  .projects__label {
-    font-size: clamp( 1rem , 1.2507836991rem  +  -1.2539184953vw , 1.25rem );
-  }
-}
-
-@supports not (font-size: clamp( 1rem , 1.2507836991rem  +  -1.2539184953vw , 1.25rem )) {
-  .projects__label {
-    font-size: calc(1rem + 0.25 * (100vw - 20rem) / -19.9375);
-  }
-}
-
-.projects__label:not(:last-child) {
-  margin: 0px 0px 0.4em 0px;
-}
-
-.projects__title {
-  margin: 0px 0px 0.8em 0px;
-}
-
 .projects__body {
   position: relative;
 }
@@ -562,7 +524,7 @@ body::after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 
 .projects__column {
@@ -587,7 +549,7 @@ body::after {
   display: -ms-inline-grid;
   display: inline-grid;
   padding: 0px 8px;
-  gap: 16px;
+  gap: 10px;
   -ms-grid-columns: auto;
   grid-template-columns: auto;
   grid-auto-flow: column;
@@ -629,6 +591,21 @@ body::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+}
+
+.special {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.margin-center img {
+  margin-bottom: 10px;
 }
 
 .swiper {
@@ -1512,12 +1489,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   bottom: 0;
   right: 0;
   left: 0;
-}
-
-@media (min-width: 0.0625em) {
-  .projects__label {
-    font-size: inherit;
-  }
 }
 
 @media (max-width: 1160px) {

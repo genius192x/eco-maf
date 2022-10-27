@@ -5933,35 +5933,37 @@ PERFORMANCE OF THIS SOFTWARE.
     };
     const da = new DynamicAdapt("max");
     da.init();
-    const projects = document.querySelector(".projects__body");
-    if (projects && !isMobile.any()) {
-        const furnitureItems = document.querySelector(".projects__items");
-        const furnitureColumn = document.querySelectorAll(".projects__column");
-        const speed = projects.dataset.speed;
-        let positionX = 0;
-        let coordXprocent = 0;
-        function setMouseGalleryStyle() {
-            let furnitureItemsWidth = 0;
-            furnitureColumn.forEach((element => {
-                furnitureItemsWidth += element.offsetWidth;
-            }));
-            const furnitureDifferent = furnitureItemsWidth - projects.offsetWidth;
-            const distX = Math.floor(coordXprocent - positionX);
-            positionX += distX * speed;
-            let position = furnitureDifferent / 200 * positionX;
-            furnitureItems.style.cssText = `transform: translate3d(${-position}px,0,0);`;
-            if (Math.abs(distX) > 0) requestAnimationFrame(setMouseGalleryStyle); else projects.classList.remove("_init");
-        }
-        projects.addEventListener("mousemove", (function(e) {
-            const furnitureWidth = projects.offsetWidth;
-            const coordX = e.pageX - furnitureWidth / 2;
-            coordXprocent = coordX / furnitureWidth * 200;
-            if (!projects.classList.contains("_init")) {
-                requestAnimationFrame(setMouseGalleryStyle);
-                projects.classList.add("_init");
+    window.onload = function() {
+        const furniture = document.querySelector(".projects__body");
+        if (furniture && !isMobile.any()) {
+            const furnitureItems = document.querySelector(".projects__items");
+            const furnitureColumn = document.querySelectorAll(".projects__column");
+            const speed = furniture.dataset.speed;
+            let positionX = 0;
+            let coordXprocent = 0;
+            function setMouseGalleryStyle() {
+                let furnitureItemsWidth = 0;
+                furnitureColumn.forEach((element => {
+                    furnitureItemsWidth += element.offsetWidth;
+                }));
+                const furnitureDifferent = furnitureItemsWidth - furniture.offsetWidth;
+                const distX = Math.floor(coordXprocent - positionX);
+                positionX += distX * speed;
+                let position = furnitureDifferent / 200 * positionX;
+                furnitureItems.style.cssText = `transform: translate3d(${-position}px,0,0);`;
+                if (Math.abs(distX) > 0) requestAnimationFrame(setMouseGalleryStyle); else furniture.classList.remove("_init");
             }
-        }));
-    }
+            furniture.addEventListener("mousemove", (function(e) {
+                const furnitureWidth = furniture.offsetWidth;
+                const coordX = e.pageX - furnitureWidth / 2;
+                coordXprocent = coordX / furnitureWidth * 200;
+                if (!furniture.classList.contains("_init")) {
+                    requestAnimationFrame(setMouseGalleryStyle);
+                    furniture.classList.add("_init");
+                }
+            }));
+        }
+    };
     window["FLS"] = true;
     addTouchClass();
     menuInit();
