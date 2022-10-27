@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221027162735">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221027231354">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,18 +25,22 @@
 					</div>
 					<nav data-da=".menu__burger, 1160" class="menu__body">
 						<ul class="menu__list">
-							<li class="menu__item"><a href="" class="menu__link">О нас</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Преимущества</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Каталог</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Наши работы</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Сертификаты</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Отзывы</a></li>
-							<li class="menu__item"><a href="" class="menu__link">Оставить заявку</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".aboutUs" class="menu__link">О нас</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".advantages" class="menu__link">Преимущества</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".catalog" class="menu__link">Каталог</a>
+							</li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".page__projects" class="menu__link">Наши
+									работы</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".certificates" class="menu__link">Сертификаты</a></li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".reviews" class="menu__link">Отзывы</a>
+							</li>
+							<li class="menu__item"><a href="" data-goto-header data-goto=".request" class="menu__link">Оставить
+									заявку</a></li>
 						</ul>
 					</nav>
 					<div data-da=".menu__burger, 480" class="header__contact">
 						<div class="header__phone"><a href="tel:+7(908)1231213">+7 (908)-123-12-13</a></div>
-						<div class="header__links">
+						<div class="header__links links">
 							<img src="img/icons/telegram_logo.svg" alt="">
 							<img src="img/icons/whatsapp_logo.svg" alt="">
 						</div>
@@ -130,161 +134,323 @@
 						<h2>Каталог</h2>
 					</div>
 					<div class="catalog__subtitle">
-						<p>Ниже представлены образцы оборудования для детских игровых и спортивных площадок:
+						<p>Ниже представлены образцы <span>оборудования для детских игровых и спортивных площадок</span>:
 						</p>
 					</div>
 				</div>
 				<!-- Оболочка слайдера -->
 
-				<div class="catalog__slider  ">
-					<div class="catalog__wrapper swiper-wrapper">
+				<div class="catalog__slider swiper-catalog">
+					<div class="catalog__wrapper swiper-wrapper ">
 						<div class="catalog__slide swiper-slide">
-							<div class="slide__header"><img src="img/playgrounds/1.jpg	" alt=""></div>
+
+							<div class="slide__image"><img src="img/playgrounds/1.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
-									<div class="slide__title">Title</div>
-									<div class="slide__subtitle">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
-										molestiae deserunt, vitae expedita nihil id eos minima aspernatur quam cupiditate mollitia
-										numquam! Nesciunt animi dolorum autem praesentium earum ut cupiditate!</div>
+									<div class="slide__title">
+										TITLE
+									</div>
+									<div class="slide__description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse culpa possimus enim,
+										facilis iste animi nobis fugiat modi expedita voluptate. Consequatur commodi a ipsa illo
+										blanditiis, sequi quidem nobis?
+									</div>
 								</div>
-								<div class="slide__button"><a href="#"><span>Показать еще</span></a></div>
-							</div>
 
+								<div class="slide__button"><a class="" href=""> <span>Показать еще</span></a></div>
+
+							</div>
 						</div>
 						<div class="catalog__slide swiper-slide">
-							<div class="slide__header"><img src="img/playgrounds/2.jpg	" alt=""></div>
+
+							<div class="slide__image"><img src="img/playgrounds/2.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
-									<div class="slide__title">Title</div>
-									<div class="slide__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-										nemo
-										voluptatem quod quae ipsum ab ex temporibus eius tempore ratione! Doloremque dicta hic
-										facere
-										nulla quasi voluptate! Sed, ab earum?</div>
+									<div class="slide__title">
+										TITLE
+									</div>
+									<div class="slide__description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse culpa possimus enim,
+										facilis iste animi nobis fugiat modi expedita voluptate. Consequatur commodi a ipsa illo
+										blanditiis, sequi quidem nobis?
+									</div>
 								</div>
-								<div class="slide__button"><a href="#"><span>Показать еще</span></a></div>
-							</div>
 
+								<a class="slide__button" href=""> <span>Показать еще</span></a>
+
+							</div>
 						</div>
 						<div class="catalog__slide swiper-slide">
-							<div class="slide__header"><span>
-									<img src="img/playgrounds/3.jpg" alt=""></div>
-							</span>
+
+							<div class="slide__image"><img src="img/playgrounds/3.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
-									<div class="slide__title">Title</div>
-									<div class="slide__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-										nemo
-										voluptatem quod quae ipsum ab ex temporibus eius tempore ratione! Doloremque dicta hic
-										facere
-										nulla quasi voluptate! Sed, ab earum?</div>
+									<div class="slide__title">
+										TITLE
+									</div>
+									<div class="slide__description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse culpa possimus enim,
+										facilis iste animi nobis fugiat modi expedita voluptate. Consequatur commodi a ipsa illo
+										blanditiis, sequi quidem nobis?
+									</div>
 								</div>
-								<div class="slide__button"><a href="#"><span>Показать еще</span></a></div>
-							</div>
 
+								<a class="slide__button" href=""> <span>Показать еще</span></a>
+
+							</div>
 						</div>
 						<div class="catalog__slide swiper-slide">
-							<div class="slide__header"><span>
-									<img src="img/playgrounds/4.jpg	" alt="">
-							</div>
-							</span>
+
+							<div class="slide__image"><img src="img/playgrounds/4.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
-									<div class="slide__title">Title</div>
-									<div class="slide__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-										nemo
-										voluptatem quod quae ipsum ab ex temporibus eius tempore ratione! Doloremque dicta hic
-										facere
-										nulla quasi voluptate! Sed, ab earum?</div>
+									<div class="slide__title">
+										TITLE
+									</div>
+									<div class="slide__description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse culpa possimus enim,
+										facilis iste animi nobis fugiat modi expedita voluptate. Consequatur commodi a ipsa illo
+										blanditiis, sequi quidem nobis?
+									</div>
 								</div>
-								<div class="slide__button"><a href="#"><span>Показать еще</span></a></div>
-							</div>
 
+								<a class="slide__button" href=""> <span>Показать еще</span></a>
+
+							</div>
 						</div>
 						<div class="catalog__slide swiper-slide">
-							<div class="slide__header"><span>
-									<img src="img/playgrounds/5.jpg" alt="">
-							</div>
-							</span>
+
+							<div class="slide__image"><img src="img/playgrounds/5.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
-									<div class="slide__title">Title</div>
-									<div class="slide__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facere
-										nemo
-										voluptatem quod quae ipsum ab ex temporibus eius tempore ratione! Doloremque dicta hic
-										facere
-										nulla quasi voluptate! Sed, ab earum?</div>
+									<div class="slide__title">
+										TITLE
+									</div>
+									<div class="slide__description">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio esse culpa possimus enim,
+										facilis iste animi nobis fugiat modi expedita voluptate. Consequatur commodi a ipsa illo
+										blanditiis, sequi quidem nobis?
+									</div>
 								</div>
-								<div class="slide__button"><a href="#"><span>Показать еще</span></a></div>
-							</div>
 
+								<div class=""><a class="slide__button" href=""> <span>Показать еще</span></a></div>
+
+							</div>
 						</div>
+
+
 					</div>
 				</div>
 			</section>
 			<section class="page__projects projects">
 				<div class="projects ">
 
-					<h2 class="projects__title _title">Наши работы</h2>
+					<h2 class="projects__title__container title">Наши работы</h2>
 					<div data-speed="0.01" class="projects__body">
 						<div class="projects__items _gallery">
 							<div class="projects__column">
 								<div class="projects__row row-projects row-projects_left-top">
-									<a href="img/projects/09.jpg" class="row-projects__item"><img src="img/for gallery/1.png" alt="Image"></a>
-									<a href="img/projects/01.jpg" class="row-projects__item"><img src="img/for gallery/3.png" alt="Image"></a>
-									<a href="img/projects/02.jpg" class="row-projects__item"><img src="img/for gallery/5.png" alt="Image"></a>
+									<div class="row-projects__item"><img src="img/for gallery/1.png" alt="Image"></div>
+									<div class="row-projects__item"><img src="img/for gallery/3.png" alt="Image"></div>
+									<div class="row-projects__item"><img src="img/for gallery/5.png" alt="Image"></div>
 								</div>
 								<div class="projects__row row-projects row-projects_left-bottom">
-									<a href="img/projects/04.jpg" class="row-projects__item"><img src="img/for gallery/2.png" alt="Image"></a>
-									<a href="img/projects/06.jpg" class="row-projects__item"><img src="img/for gallery/4.png" alt="Image"></a>
+									<a class="row-projects__item"><img src="img/for gallery/2.png" alt="Image"></a>
+									<a class="row-projects__item"><img src="img/for gallery/4.png" alt="Image"></a>
 									<div class=" special ">
-										<a href="img/projects/07.jpg" class="row-projects__item "><img src="img/for gallery/6.png" alt="Image"></a>
-										<a href="img/projects/07.jpg" class="row-projects__item "><img src="img/for gallery/7.png" alt="Image"></a>
+										<div class="row-projects__item "><img src="img/for gallery/6.png" alt="Image"></div>
+										<div class="row-projects__item "><img src="img/for gallery/7.png" alt="Image"></div>
 									</div>
 								</div>
 							</div>
 							<div class="projects__column">
 								<div class="projects__row row-projects row-projects_center">
-									<a href="img/projects/03.jpg" class="row-projects__item margin-center"><img src="img/for gallery/8.png" alt="Image"></a>
-									<a href="img/projects/03.jpg" class="row-projects__item"><img src="img/for gallery/9.png" alt="Image"></a>
+									<div class="row-projects__item margin-center"><img src="img/for gallery/8.png" alt="Image">
+									</div>
+									<div class="row-projects__item"><img src="img/for gallery/9.png" alt="Image"></div>
 								</div>
 							</div>
 							<div class="projects__column">
 								<div class="projects__row row-projects row-projects_right-top">
 									<div class=" special ">
-										<a href="img/projects/07.jpg" class="row-projects__item "><img src="img/for gallery/10.png" alt="Image"></a>
-										<a href="img/projects/07.jpg" class="row-projects__item "><img src="img/for gallery/11.png" alt="Image"></a>
+										<div class="row-projects__item "><img src="img/for gallery/10.png" alt="Image"></div>
+										<div class="row-projects__item "><img src="img/for gallery/11.png" alt="Image"></div>
 									</div>
-									<a href="img/projects/05.jpg" class="row-projects__item"><img src="img/for gallery/14.png" alt="Image"></a>
-									<a href="img/projects/01.jpg" class="row-projects__item"><img src="img/for gallery/16.png" alt="Image"></a>
+									<div class="row-projects__item"><img src="img/for gallery/14.png" alt="Image"></div>
+									<div class="row-projects__item"><img src="img/for gallery/16.png" alt="Image"></div>
 								</div>
 								<div class="projects__row row-projects row-projects_right-bottom">
-									<a href="img/projects/08.jpg" class="row-projects__item"><img src="img/for gallery/12.png" alt="Image"></a>
-									<a href="img/projects/09.jpg" class="row-projects__item"><img src="img/for gallery/15.png" alt="Image"></a>
-									<a href="img/projects/06.jpg" class="row-projects__item"><img src="img/for gallery/17.png" alt="Image"></a>
+									<div class="row-projects__item"><img src="img/for gallery/12.png" alt="Image"></div>
+									<div class="row-projects__item"><img src="img/for gallery/15.png" alt="Image"></div>
+									<div class="row-projects__item"><img src="img/for gallery/17.png" alt="Image"></div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="certificates">
+				<div class="certificates__container">
+					<div class="certificates__title title">Сертификаты</div>
+					<div class="certificates__pictures">
+						<div class="certificates__picture"><img src="img/2022-10-27_20-48-26.png" alt=""></div>
+						<div class="certificates__picture"><img src="img/2022-10-27_20-48-26.png" alt=""></div>
+						<div class="certificates__picture"><img src="img/2022-10-27_20-48-26.png" alt=""></div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews">
+				<div class="reviews__container">
+					<div class="reviews__title title">Отзывы</div>
+					<div class="reviews__slider reviews-swiper">
+						<div class="reviews__wrapper swiper-wrapper">
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__name  "> Шевченко Николай</div>
+								<div class="reviews__company review-text">Компания: Институт им.Чехова</div>
+								<div class="reviews__city review-text">Город: Таганрог</div>
+								<div class="reviews__description review-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus, orci pharetra faucibus leo,
+									diam. Tristique tincidunt urna mi risus vestibulum interdum. Pellentesque fermentum tortor
+									congue elementum ante neque neque. Enim elit laoreet integer diam pretium. Nec erat feugiat
+									lorem adipiscing eu pellentesque adipiscing. Et dictum morbi risus metus, vestibulum cursus
+									pellentesque. Metus, varius ipsum viverra ac urna ac purus. Sagittis, placerat vestibulum
+									cras mi sapien.
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__name  "> Шевченко Николай</div>
+								<div class="reviews__company review-text">Компания: Институт им.Чехова</div>
+								<div class="reviews__city review-text">Город: Таганрог</div>
+								<div class="reviews__description review-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus, orci pharetra faucibus leo,
+									diam. Tristique tincidunt urna mi risus vestibulum interdum. Pellentesque fermentum tortor
+									congue elementum ante neque neque. Enim elit laoreet integer diam pretium. Nec erat feugiat
+									lorem adipiscing eu pellentesque adipiscing. Et dictum morbi risus metus, vestibulum cursus
+									pellentesque. Metus, varius ipsum viverra ac urna ac purus. Sagittis, placerat vestibulum
+									cras mi sapien.
+								</div>
+							</div>
+							<div class="reviews__slide swiper-slide">
+								<div class="reviews__name"> Шевченко Николай</div>
+								<div class="reviews__company review-text">Компания: Институт им.Чехова</div>
+								<div class="reviews__city review-text">Город: Таганрог</div>
+								<div class="reviews__description review-text">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tempus, orci pharetra faucibus leo,
+									diam. Tristique tincidunt urna mi risus vestibulum interdum. Pellentesque fermentum tortor
+									congue elementum ante neque neque. Enim elit laoreet integer diam pretium. Nec erat feugiat
+									lorem adipiscing eu pellentesque adipiscing. Et dictum morbi risus metus, vestibulum cursus
+									pellentesque. Metus, varius ipsum viverra ac urna ac purus. Sagittis, placerat vestibulum
+									cras mi sapien.
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="request">
+				<div class="request__container">
+					<div class="request__title title">Оставить заявку</div>
+					<form class="forms">
+						<div class="request__item">
+							<label for="input">Ваше имя*</label>
+							<input placeholder=" " id="requestName" type="text" name="name" class="request__input  ">
+						</div>
+						<div class="request__item">
+							<label for="input">Номер телефона*</label>
+							<input placeholder=" " id="requestTel" type="tel" name="Tel" class="request__input  ">
+						</div>
+						<div class="request__item">
+							<label for="input">Email*</label>
+							<input placeholder=" " id="feedbackTel" type="Email" name="mail" class="request__input  ">
+						</div>
+						<div class="request__item">
+							<label for="input">Доп.информация*</label>
+							<textarea placeholder=" " id="feedbackText" type="text" name="Text" class="request__input  "></textarea>
+						</div>
+
+						<button type="submit" class="button">Отправить</button>
+					</form>
+				</div>
+			</section>
+			<section class="map">
+				<div class="map__container">
+					<div class="map__title title">Мы на карте</div>
+				</div>
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A746c4dd04cf8cb090bbfd8c358e9ae362a56da86d78edb3fdb201d21326cf3e0&amp;source=constructor" width="100%" height="457" frameborder="0"></iframe>
+			</section>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
+				<div class="footer__column">
+					<div class=" logo">LOGO</div>
+					<div class="footer__orgnip footer-text">ОГРНИП: 320619600093738</div>
+					<div class="footer__inn footer-text">ИНН: 615424440529</div>
+					<div class="footer__bik footer-text">БИК: 046015602</div>
+				</div>
+				<div class="footer__column">
+					<div class="footer__number footer-text">+7 (961) 30 919 30</div>
+					<div class="footer__address footer-text">г.Таганрог ул.Греческая, д.37</div>
+					<div class="footer__mail footer-text">eco-maf@mail.com</div>
+
+				</div>
+				<div class="footer__column">
+					<div class="footer__links links">
+						<img src="img/icons/telegram_logo.svg" alt="">
+						<img src="img/icons/whatsapp_logo.svg" alt="">
+					</div>
+					<a data-goto-header data-goto=".main" class="footer__goTop footer-text">Вернуться в начало <img src="img/icons/Chevron_Up.svg" alt=""> </a>
+				</div>
 			</div>
 		</footer>
 	</div>
 	<div id="popup" aria-hidden="true" class="popup">
 		<div class="popup__wrapper">
 			<div class="popup__content">
-				<button data-close type="button" class="popup__close">Закрыть</button>
-				<div class="popup__text">
-					Text
+
+
+				<div data-close class="close__popup"></div>
+				<div class="popup__items">
+					<div class="callback__content">
+						<h2 class="form__title">Заказать звонок</h2>
+						<h2 class="form__subtitle">Впишите свои данные, и мы свяжемся с Вами. Ваши данные ни при каких
+							обстоятельствах не будут переданы третьим лицам.</h2>
+						<form action="index.html" class="form">
+
+
+							<div class="form__item">
+
+								<input id="formName" placeholder="Ваше имя" type="text" name="name" class="form__input _req">
+							</div>
+							<div class="form__item">
+
+								<input id="formTel" placeholder="+7 (977) 777-77-77" type="text" name="Tel" class="form__input _req">
+							</div>
+
+							<div class="popup__links">
+								<button type="submit" class="send">Отправить
+
+								</button>
+								<div class="header__links links">
+									<img src="img/icons/telegram_logo.svg" alt="">
+									<img src="img/icons/whatsapp_logo.svg" alt="">
+								</div>
+							</div>
+						</form>
+						<div class="popup__text">
+							<p>
+								Нажимая на кнопку «Отправить», я даю свое согласие на обработку персональных данных, в соответствии с <a>
+									Политикой
+									конфиденциальности
+								</a>
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<script src="js/app.min.js?_v=20221027162735"></script>
+	<script src="js/app.min.js?_v=20221027231354"></script>
 </body>
 
 </html>

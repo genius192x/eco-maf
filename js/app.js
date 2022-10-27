@@ -4017,21 +4017,80 @@
             },
             on: {}
         });
-        if (document.querySelector(".catalog__slider")) new core(".catalog__slider", {
-            modules: [ Navigation, Pagination ],
+        if (document.querySelector(".swiper-catalog")) new core(".swiper-catalog", {
+            observer: true,
+            observeParents: true,
+            slidesPerView: 3,
+            spaceBetween: 24,
+            autoHeight: true,
+            speed: 1500,
+            loop: true,
+            allowTouchMove: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 4e3,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoHeight: true
+                },
+                594: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
+            },
+            on: {}
+        });
+        if (document.querySelector(".reviews-swiper")) new core(".reviews-swiper", {
             observer: true,
             observeParents: true,
             slidesPerView: "auto",
             spaceBetween: 24,
-            autoHeight: false,
+            autoHeight: true,
             speed: 1500,
-            centeredSlides: true,
-            loop: false,
+            loop: true,
             allowTouchMove: true,
-            preloadImages: false,
             autoplay: {
                 delay: 4e3,
                 disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    autoHeight: true
+                },
+                594: {
+                    slidesPerView: 1.5,
+                    spaceBetween: 20
+                },
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                1268: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                }
             },
             on: {}
         });
