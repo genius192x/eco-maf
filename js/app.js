@@ -79,7 +79,7 @@
     }
     function functions_FLS(message) {
         setTimeout((() => {
-            if (window.FLS) console.log(message);
+            if (window.FLS) ;
         }), 0);
     }
     class Popup {
@@ -4018,6 +4018,7 @@
             on: {}
         });
         if (document.querySelector(".swiper-catalog")) new core(".swiper-catalog", {
+            modules: [ Navigation, EffectFade, Autoplay, Pagination ],
             observer: true,
             observeParents: true,
             slidesPerView: 3,
@@ -4030,10 +4031,6 @@
             autoplay: {
                 delay: 4e3,
                 disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true
             },
             breakpoints: {
                 320: {
