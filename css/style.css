@@ -759,6 +759,10 @@ body::after {
           align-items: center;
 }
 
+.footer__goTop {
+  cursor: pointer;
+}
+
 .footer__goTop img {
   width: 30px;
 }
@@ -1174,7 +1178,7 @@ body::after {
 .products__items {
   display: -ms-grid;
   display: grid;
-  gap: 32px;
+  gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
 }
 
@@ -2474,9 +2478,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background-color: rgb(0, 164, 200);
     position: fixed;
     top: 0;
+    padding-top: 50px;
     width: 100%;
     height: 100%;
-    left: 100%;
+    right: 110%;
     -webkit-transition: all 1s ease 0s;
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
@@ -2502,7 +2507,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -o-transition: all 1s ease 0s;
     transition: all 1s ease 0s;
     overflow: auto;
-    left: 0;
+    right: 0;
   }
 }
 
@@ -2629,6 +2634,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     max-width: 80%;
   }
 
+  .chat {
+    bottom: 5%;
+  }
+
   .chat__icon {
     bottom: 20px;
     right: 50px;
@@ -2655,6 +2664,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .header__phone.icon {
     display: block;
+  }
+
+  .main__content {
+    top: 30%;
   }
 
   .chat__icon {
@@ -2724,6 +2737,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .actions-product__link:hover {
     color: orange;
+  }
+}
+
+@media (max-height: 536px) {
+  .main__content {
+    top: 20%;
   }
 }
 
