@@ -1765,11 +1765,11 @@ textarea {
 }
 
 .slide__button:active {
-  -webkit-transform: translate(0px, 5px);
-      -ms-transform: translate(0px, 5px);
-          transform: translate(0px, 5px);
-  -webkit-box-shadow: 0px 5px 0 hsla(0deg, 100%, 13%, 0);
-          box-shadow: 0px 5px 0 hsla(0deg, 100%, 13%, 0);
+  -webkit-transform: translate(0px, 3px);
+      -ms-transform: translate(0px, 3px);
+          transform: translate(0px, 3px);
+  -webkit-box-shadow: 0px 2px 0 hsla(0deg, 100%, 13%, 0.6);
+          box-shadow: 0px 2px 0 hsla(0deg, 100%, 13%, 0.6);
 }
 
 .swiper-slide {
