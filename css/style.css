@@ -1122,6 +1122,11 @@ body::after {
   opacity: 0;
 }
 
+.feedback__input._form-error {
+  border: 1px solid rgb(255, 0, 0);
+  border-radius: 10px;
+}
+
 .feedback__send {
   width: 170px;
   border: 1px solid #000;
@@ -1139,6 +1144,10 @@ body::after {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 20px;
+}
+
+.form__error {
+  font-size: 18px;
 }
 
 textarea {

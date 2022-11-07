@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20221107201859">
+	<link rel="stylesheet" href="css/style.min.css?_v=20221107213837">
 
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -194,7 +194,7 @@
 					<div class="catalog__wrapper swiper-wrapper ">
 						<div class="catalog__slide swiper-slide">
 
-							<div class="slide__image"><img src="img/rocking/image 6.png" alt=""></div>
+							<div class="slide__image"><img src="img/rocking/image_35.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
 									<div class="slide__title">
@@ -207,13 +207,11 @@
 
 								</div>
 
-
-
 							</div>
 						</div>
 						<div class="catalog__slide swiper-slide">
 
-							<div class="slide__image"><img src="img/carousels/image 34.png" alt=""></div>
+							<div class="slide__image"><img src="img/carousels/image_42.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
 									<div class="slide__title">
@@ -232,7 +230,7 @@
 						</div>
 						<div class="catalog__slide swiper-slide">
 
-							<div class="slide__image"><img src="img/swing/image 39.png" alt=""></div>
+							<div class="slide__image"><img src="img/swing/image 42.png" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
 									<div class="slide__title">
@@ -251,7 +249,7 @@
 						</div>
 						<div class="catalog__slide swiper-slide">
 
-							<div class="slide__image"><img src="img/slides/image 52.png" alt=""></div>
+							<div class="slide__image"><img src="img/slides/image__53.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
 									<div class="slide__title">
@@ -270,7 +268,7 @@
 						</div>
 						<div class="catalog__slide swiper-slide">
 
-							<div class="slide__image"><img src="img/sandbox/image 67.png" alt=""></div>
+							<div class="slide__image"><img src="img/sandbox/image_73.jpg" alt=""></div>
 							<div class="slide__content">
 								<div class="slide__text">
 									<div class="slide__title">
@@ -555,15 +553,15 @@
 				<div class="feedback__container">
 					<div class="reviews__title title">Оставить заявку</div>
 					<div class="feedback__inputs">
-						<form action="index.html" class="form">
+						<form data-dev data-ajax method="POST" action="#" class="form">
 							<div class="feedback__item">
-								<input placeholder="Ваше имя" id="feedbackName" type="text" name="name" class="feedback__input req">
+								<input placeholder="Ваше имя" data-validate="" data-error="Поле осталось не заполенным" data-required id="feedbackName" type="text" name="name" class="feedback__input req">
 							</div>
 							<div class="feedback__item">
-								<input placeholder="+7 (977) 777-77-77" id="feedbackTel" type="tel" name="Tel" class="feedback__input req">
+								<input placeholder="+7 (977) 777-77-77" data-validate="" data-error="Вы забыли ввести свой номер" data-required id="feedbackTel" type="tel" name="tel" class="feedback__input req">
 							</div>
 							<div class="feedback__item">
-								<input placeholder="Email" id="feedbackEmail" type="email" name="Tel" class="feedback__input req">
+								<input placeholder="Email" data-validate="" data-error="Введен некорректный Email" data-required="email" id="feedbackEmail" type="email" name="Tel" class="feedback__input req">
 							</div>
 							<div class="feedback__item">
 								<textarea placeholder="Ваш комментарий" id="feedbackText" type="text" name="Text" class="feedback__input req comment  "></textarea>
@@ -607,7 +605,7 @@
 		</footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20221107201859"></script>
+	<script src="js/app.min.js?_v=20221107213837"></script>
 </body>
 
 </html>
